@@ -1,12 +1,5 @@
-import { Colors } from "../styles/colors";
-import BTCStock from "./btcStock";
-import BTCPie from "./btcPie";
-import PriceChangeTable from "./priceChangeTable";
-import BitcoinPurchase from "./bitcoinPurchase";
-import BitcoinTransfer from "./bitcoinTransfer";
-import ExchangeRateTicker from "./exchangeRateticker";
-import AppCard from "./appCard";
-import Grid2 from "@mui/material/Unstable_Grid2"; // Grid version 2
+// import { Colors } from "../styles/colors";
+
 import { DrawerHeader, drawerWidth, HeaderTitle } from "./appDrawer";
 import { Box } from "@mui/material";
 import { useAppState } from "../state/appState";
@@ -65,8 +58,9 @@ export default function Main() {
         >
           <HeaderTitle>Welcome to Crypto Dashboard</HeaderTitle>
         </Box>
-        <ExchangeRateTicker />
-        <Grid2
+        {/* Promotions Section */}
+        {/* <ExchangeRateTicker /> */}
+        {/* <Grid2
           container
           justifyContent="space-evenly"
           alignItems="center"
@@ -116,8 +110,8 @@ export default function Main() {
               bg={Colors.blackcoin}
             />
           </Grid2>
-        </Grid2>
-        <Grid2
+        </Grid2> */}
+        {/* <Grid2
           justifyContent="space-evenly"
           alignItems="center"
           container
@@ -130,9 +124,9 @@ export default function Main() {
           <Grid2 xs={12} md={4}>
             <BTCPie />
           </Grid2>
-        </Grid2>
+        </Grid2> */}
 
-        <Grid2
+        {/* <Grid2
           justifyContent="space-evenly"
           alignItems="center"
           container
@@ -148,7 +142,7 @@ export default function Main() {
               <BitcoinTransfer />
             </Box>
           </Grid2>
-        </Grid2>
+        </Grid2> */}
       </Box>
     </MainContainer>
   );
